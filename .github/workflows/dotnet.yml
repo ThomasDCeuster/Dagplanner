@@ -22,11 +22,11 @@ jobs:
         dotnet-version: 6.0.x
     - name: Restore dependencies
       run: dotnet restore
-    - name: Build
+    - name: Publish
       run: dotnet publish -r win-x64 -c Release /p:PublishSingleFile=true
 
     - name: Upload Dagplanner Build Artifact
       uses: actions/upload-artifact@v2
       with:
-        name: WebApp1
-        path: /home/runner/work/Dagplanner/Dagplanner/Dagplanner/bin/Release/net6.0-windows/publish/
+        name: Dagplanner
+        path: /home/runner/work/Dagplanner/Dagplanner/Dagplanner/bin/Release/net6.0-windows/win-x64/publish/
