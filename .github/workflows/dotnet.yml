@@ -28,15 +28,9 @@ jobs:
       run: dotnet test --no-build --verbosity normal
     - name: Publish
       run: dotnet publish
-      
-    - name: Upload WebApp1 Build Artifact
-      uses: actions/upload-artifact@v2
-      with:
-        name: WebApp1
-        path: /home/runner/work/Playground/Playground/src/WebApp1/bin/Debug/netcoreapp3.1/publish/
     
-    - name: Upload WebApp2 Build Artifact
+    - name: Upload Dagplanner Build Artifact
       uses: actions/upload-artifact@v2
       with:
-        name: WebApp2
-        path: /home/runner/work/Playground/Playground/src/WebApp2/bin/Debug/netcoreapp3.1/publish/
+        name: Dagplanner
+        path: /home/runner/work/Dagplanner/Publish/
