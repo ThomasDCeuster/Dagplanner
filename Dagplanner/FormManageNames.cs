@@ -11,7 +11,7 @@ namespace Dagplanner
         //globale variabelen
         List<Werknemer> listFulltime = new List<Werknemer>();
         List<Werknemer> listParttime = new List<Werknemer>();
-        List<Stagaire> listStag = new List<Stagaire>();
+        List<Stagiaire> listStag = new List<Stagiaire>();
         string connectionString = new SqliteConnectionStringBuilder()
         {
             Mode = SqliteOpenMode.ReadWriteCreate,
@@ -73,7 +73,7 @@ namespace Dagplanner
                     if (daysLeft > 0)
                     {
                         //stagaire aanmaken en aan lijst toevoegen
-                        Stagaire stag = new Stagaire(werk.getId(), werk.getFirstname(), werk.getLastname(), werk.getIsFulltime(), werk.getDays());
+                        Stagiaire stag = new Stagiaire(werk.getId(), werk.getFirstname(), werk.getLastname(), werk.getIsFulltime(), werk.getDays());
                         listStag.Add(stag);
                     }
                     else
@@ -103,7 +103,7 @@ namespace Dagplanner
             {
                 listBoxPart.Items.Add(werk.ToString());
             }
-            foreach (Stagaire stag in listStag)
+            foreach (Stagiaire stag in listStag)
             {
                 listBoxStag.Items.Add(stag.ToString());
             }
@@ -146,7 +146,7 @@ namespace Dagplanner
                     id = werk.getId();
                 }
             }
-            foreach (Stagaire stag in listStag)
+            foreach (Stagiaire stag in listStag)
             {
                 if (stag.ToString().Equals(name))
                 {

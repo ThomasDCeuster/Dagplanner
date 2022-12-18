@@ -99,7 +99,6 @@ C:\Users\thoma\Desktop\Dagplanner\Dagplanner\Dagplanner\bin\Debug\net6.0-windows
 C:\Users\thoma\Desktop\Dagplanner\Dagplanner\Dagplanner\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\thoma\Desktop\Dagplanner\Dagplanner\Dagplanner\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Text.Encoding.CodePages.dll
 C:\Users\thoma\Desktop\Dagplanner\Dagplanner\Dagplanner\obj\Debug\net6.0-windows\Dagplanner.csproj.AssemblyReference.cache
-C:\Users\thoma\Desktop\Dagplanner\Dagplanner\Dagplanner\obj\Debug\net6.0-windows\Dagplanner.Form1.resources
 C:\Users\thoma\Desktop\Dagplanner\Dagplanner\Dagplanner\obj\Debug\net6.0-windows\Dagplanner.FormManageNames.resources
 C:\Users\thoma\Desktop\Dagplanner\Dagplanner\Dagplanner\obj\Debug\net6.0-windows\Dagplanner.csproj.GenerateResource.cache
 C:\Users\thoma\Desktop\Dagplanner\Dagplanner\Dagplanner\obj\Debug\net6.0-windows\Dagplanner.GeneratedMSBuildEditorConfig.editorconfig
@@ -112,3 +111,4 @@ C:\Users\thoma\Desktop\Dagplanner\Dagplanner\Dagplanner\obj\Debug\net6.0-windows
 C:\Users\thoma\Desktop\Dagplanner\Dagplanner\Dagplanner\obj\Debug\net6.0-windows\Dagplanner.pdb
 C:\Users\thoma\Desktop\Dagplanner\Dagplanner\Dagplanner\obj\Debug\net6.0-windows\Dagplanner.genruntimeconfig.cache
 C:\Users\thoma\Desktop\Dagplanner\Dagplanner\Dagplanner\obj\Debug\net6.0-windows\ref\Dagplanner.dll
+C:\Users\thoma\Desktop\Dagplanner\Dagplanner\Dagplanner\obj\Debug\net6.0-windows\Dagplanner.FormPlanner.resources

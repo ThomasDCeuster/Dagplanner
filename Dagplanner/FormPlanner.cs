@@ -3,13 +3,12 @@ using Microsoft.Data.Sqlite;
 using Spire.Xls;
 using System.Data.SQLite;
 using System.Diagnostics;
-using System.Linq.Expressions;
 using System.Text;
 namespace Dagplanner
 {
-    public partial class Form1 : Form
+    public partial class FormPlanner : Form
     {
-        public Form1()
+        public FormPlanner()
         {
             InitializeComponent();
             Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);

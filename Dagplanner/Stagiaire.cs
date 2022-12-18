@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Dagplanner
 {
-    public class Stagaire : Werknemer
+    public class Stagiaire : Werknemer
     {
         private int daysLeft;
 
-        public Stagaire(int id, string firstName, string lastName, int isFulltime, int daysLeft) : base(id, firstName, lastName, isFulltime)
+        public Stagiaire(int id, string firstName, string lastName, int isFulltime, int daysLeft) : base(id, firstName, lastName, isFulltime)
         {
             this.daysLeft = daysLeft;
         }

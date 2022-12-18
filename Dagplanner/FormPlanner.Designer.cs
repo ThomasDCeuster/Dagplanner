@@ -1,6 +1,6 @@
 ﻿namespace Dagplanner
 {
-    partial class Form1
+    partial class FormPlanner
     {
         /// <summary>
         ///  Required designer variable.
