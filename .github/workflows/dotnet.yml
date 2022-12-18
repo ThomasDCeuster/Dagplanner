@@ -23,14 +23,10 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
-    - name: Publish
-      run: dotnet publish
-    
+      run: dotnet publish -r win-x64 -c Release /p:PublishSingleFile=true /p:PublishTrimmed=true
+
     - name: Upload Dagplanner Build Artifact
       uses: actions/upload-artifact@v2
       with:
-        name: Dagplanner
-        path: /home/runner/work/Dagplanner/Dagplanner/Dagplanner/bin/Release/net6.0-windows/publish
+        name: WebApp1
+        path: /home/runner/work/Dagplanner/Dagplanner/Dagplanner/bin/Release/net6.0-windows/publish/
