@@ -1,6 +1,7 @@
 using Dapper;
 using Microsoft.Data.Sqlite;
 using Spire.Xls;
+using System.Data.SQLite;
 using System.Diagnostics;
 using System.Linq.Expressions;
 using System.Text;
@@ -105,6 +106,20 @@ namespace Dagplanner
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // Databank aanmaken als die nog niet bestaat
+            if (!File.Exists(Environment.CurrentDirectory + "\\werknemers.db"))
+            {
+                SQLiteConnection.CreateFile(Environment.CurrentDirectory + "\\werknemers.db");
+
+                using (var connection = new SQLiteConnection(connectionString))
+                {
+                    connection.Open();
+                    string sql = "CREATE TABLE werknemer(id INTEGER PRIMARY KEY UNIQUE NOT NULL, voornaam TEXT NOT NULL, achternaam TEXT NOT NULL, isFulltime INTEGER NOT NULL, dagen INTEGER NOT NULL);";
+                    connection.Execute(sql);
+                    connection.Close();
+                }
+            }
+
             //form niet resizable maken
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
 
